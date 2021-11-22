@@ -5,13 +5,10 @@
 }
 body {
   background: #F2F2F2;
-  padding:12px;
+ margin: 0;
   font-family: 'Poppins'; 
 }
-.Hero{
-    text-align: center;
-    text-decoration-style: dotted;
-}
+
 .navbar{
     background: white;
     padding:1em;
@@ -26,32 +23,112 @@ body {
     span{
         color: var(--Primary-color);
     }
+
+    nav{
+    display: none;
+   }
+
+
+ .container{
+    display: flex;
+    place-content:space-between;
+   }    
+
 }
 
-nav{
-    display: none;
+a{
+    color: #444444;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+.Hero{
+    text-align: center;
+}
+.left-col{
+    .Subhead{
+        text-transform:uppercase;
+        font-weight: bold;
+        color: grey;
+        letter-spacing:.3em;
+    }
+
+    h3{
+       line-height: 1.3em;
+       margin-top: .2em;
+    }
+
+    .primary-cta{
+        background: var(--Primary-color);
+        color:white; 
+        text-decoration: none;
+        padding:.6em 1.3em;
+        border-radius: 5em;
+        font-weight: bold;
+        display:inline-block;
+    }
+}
+
+
+.ingredients{
+    background:#20273E ;
+    color:white;
+    
+}
+ ul.Ingredients-list{
+     margin:0;
+     padding-left: .1em;
+
+     li{
+         font-size: 1.1em;
+         margin:1em; 
+         margin-left: 2em;
+
+         &:before{
+             content:''; 
+             position:absolute;
+             height: 20px;
+             width: 20px;
+             margin-right: .5em;
+             left:-2em;
+         }
+         
+     }
+ }
+
+  .Prepartion{
+         background: var(--Primary-color);
+         color:white;
+       
+     }
+
+     .navbar .nav-item .nav-link {
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+	color:black;
+	text-decoration: none;
+	transition: all 0.2s ease;
 }
     
 
-
-h1 {
-    font-size: 300%;
-}
-
-h1,
 h2 {
-    color:var(--Primary-color );
+    color:white;
+    font-weight: bold;
     text-transform: uppercase;
     font-weight: 100;
 }
 
-img {
-    width: 100%;
-}
-
 footer {
     margin-top: 50px;
-    background-color:white;
+    background-color:#F2F2F2;
     color:black;
 }
 
